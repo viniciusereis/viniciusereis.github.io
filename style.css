@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(193, 222, 223);
+    
+}
+#sobre-mim{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: justify;
+}
+#minhas-habilidades{
+    font-size: 18px;
+    
+}
+h2{
+    font-family:'Times New Roman';
+    font-size: 30px;
+}
+#links{
+    font-family: 'Times New Roman';
+    font-size: 18px;
+}
