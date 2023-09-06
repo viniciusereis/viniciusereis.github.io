@@ -1,0 +1,45 @@
+/* Div Principal */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Layout responsivo */
+  grid-gap: 20px;
+
+}
+
+/* Div das Hards Skills */
+.div-container-HardSkills {
+  display: flex;
+  justify-content: center;
+}
+
+/* Div das Soft Skills */
+.div-container-SoftSkills {
+  display: flex;
+  justify-content: center;
+}
+
+/* Div dos Item (IMG, Span) */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+/* Aumenta o tamanho em 10% quando o mouse passa por cima */
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+/* Titulo de cada Hard Skills */
+.skill-title {
+  margin-top: 10px;
+}
+
+/* Imagem de cada Hard Skills */
+.image-skills {
+  max-width: 50%;
+  width: 200px;
+}
