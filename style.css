@@ -6,6 +6,12 @@
   grid-gap: 20px;
 
 }
+/* Imagem do perfil */
+#image-Perfil{
+  width: 250px;
+  border-style: outset;
+  
+}
 
 /* Div das Hards Skills */
 .div-container-HardSkills {
