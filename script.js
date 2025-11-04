@@ -4,7 +4,7 @@ function listaDeFilmes() {
     {
       title: 'Harry Potter',
       synopsis: 'As aventuras de um jovem bruxo em Hogwarts.',
-      year: '2001',
+      year: '2001 - 2011',
     },
     {
       title: 'As Vantagens de Ser Invisível',

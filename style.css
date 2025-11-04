@@ -4,6 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   /* Layout responsivo */
   grid-gap: 20px;
+  background-color: rgb(241, 230, 219);
 
 }
 /* Imagem do perfil */
@@ -12,40 +13,130 @@
   border-style: outset;
   
 }
-
-/* Div das Hards Skills */
-.div-container-HardSkills {
-  display: flex;
-  justify-content: center;
-}
-
-/* Div das Soft Skills */
-.div-container-SoftSkills {
-  display: flex;
-  justify-content: center;
-}
-
-/* Div dos Item (IMG, Span) */
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.2s;
-}
-
 /* Aumenta o tamanho em 10% quando o mouse passa por cima */
-.skill-item:hover {
+.skill:hover {
   transform: scale(1.1);
 }
-
-/* Titulo de cada Hard Skills */
-.skill-title {
-  margin-top: 10px;
+/* Texto sobre mim  */
+.col-md-8{
+  text-align: justify;background-color: rgb(166, 226, 226);
 }
 
-/* Imagem de cada Hard Skills */
-.image-skills {
-  max-width: 50%;
-  width: 200px;
+ /* ===== ESTILO GERAL DA PÁGINA ===== */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte principal (Arial ou similar) */
+  background-color: #fefaf6;      /* Cor de fundo da página (bege claro) */
+  margin: 0;                      /* Remove margens externas padrão do navegador */
+  padding: 20px;                  /* Adiciona um espaço interno em toda a página */
+  color: #333;                    /* Cor padrão do texto (cinza escuro) */
 }
+
+/* ===== TÍTULOS (Hard Skills / Soft Skills) ===== */
+h2 {
+  margin-bottom: 10px;            /* Espaço abaixo do título para separar do conteúdo */
+  color: #222;                    /* Cor do texto do título (quase preto) */
+}
+
+/* ===== SEÇÕES QUE CONTÊM AS HABILIDADES ===== */
+.section {
+  background-color: #f6eae0;      /* Cor de fundo das caixas de seção */
+  border-radius: 10px;            /* Arredonda os cantos da caixa */
+  padding: 20px;                  /* Espaço interno entre o conteúdo e as bordas */
+  margin-bottom: 40px;            /* Espaço abaixo da seção para separar da próxima */
+}
+
+/* ===== GRADE DE HABILIDADES (GRID LAYOUT) ===== */
+.skills-grid {
+  display: grid;                                      /* Usa o sistema de grid do CSS */
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
+  /* Cria colunas automáticas que se ajustam à largura da tela
+     - auto-fit: o número de colunas se adapta automaticamente
+     - minmax(130px, 1fr): cada coluna terá no mínimo 130px e ocupará o espaço restante igualmente */
+  gap: 25px;                                          /* Espaço entre os itens da grade */
+  justify-items: center;                              /* Centraliza os itens horizontalmente */
+  align-items: center;                                /* Centraliza os itens verticalmente */
+}
+
+/* ===== CADA HABILIDADE INDIVIDUAL ===== */
+.skill {
+  text-align: center;            /* Centraliza o texto e a imagem dentro do bloco */
+}
+
+/* ===== IMAGENS DAS HABILIDADES ===== */
+.skill img {
+  width: 70px;                   /* Largura fixa da imagem */
+  height: 70px;                  /* Altura fixa da imagem */
+  object-fit: contain;           /* Mantém proporção da imagem sem cortar */
+  margin-bottom: 10px;           /* Espaço entre a imagem e o texto abaixo */
+}
+
+/* ===== TEXTO DO NOME DAS HABILIDADES ===== */
+.skill p {
+  font-size: 14px;               /* Tamanho da fonte do texto da habilidade */
+  margin: 0;                     /* Remove margens extras do parágrafo */
+  color: #444;                   /* Cor do texto (cinza médio) */
+}
+
+
+
+/* ----------------- */
+
+   
+
+    h2 {
+      color: #222;
+      font-size: 28px;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    .experiencia-container {
+      background-color: #f6eae0;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .empresa {
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e1d2c3;
+    }
+
+    .empresa:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .empresa h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #1d3557;
+    }
+
+    .cargo {
+      font-weight: bold;
+      color: #6d4c41;
+      margin: 5px 0;
+    }
+
+    .data {
+      font-style: italic;
+      color: #8d6e63;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .descricao {
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    .icon {
+      color: #b08868;
+      margin-right: 8px;
+    }
