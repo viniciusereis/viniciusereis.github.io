@@ -166,3 +166,245 @@ h2 {
   margin: 30px 0 15px;
   color: #000000;
 }
+/* ----------- BASE ----------- */
+.footer-box {
+  background-color: #f6eae0;
+  padding: 40px 25px;
+  border-radius: 12px;
+  margin-top: 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  animation: fadeSlide 1s ease forwards;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 280px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+/* ----------- ÍCONES ----------- */
+.icon-social {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ----------- BOTÕES SOCIAIS ----------- */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.linkedin { background-color: #457b9d; }
+.linkedin:hover { background-color: #35617a; transform: scale(1.06); }
+
+.github { background-color: #6d4c41; }
+.github:hover { background-color: #5a3d34; transform: scale(1.06); }
+
+/* ----------- FORMULÁRIO ----------- */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-form input,
+.footer-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-size: 15px;
+}
+
+.footer-form textarea {
+  resize: vertical;
+  height: 90px;
+}
+
+.footer-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e76f51;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-form button:hover {
+  background-color: #d65b41;
+  transform: scale(1.05);
+}
+
+/* ----------- COPYRIGHT ----------- */
+.footer-copy {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+  color: #555;
+  opacity: 0.8;
+}
+
+/* ----------- ANIMAÇÃO ----------- */
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ----------- MODO ESCURO (automático) ----------- */
+@media (prefers-color-scheme: dark) {
+  .footer-box {
+    background-color: #2b2b2b;
+    color: #eaeaea;
+  }
+
+  .footer-section h3 {
+    color: #ffffff;
+  }
+
+  .footer-form input,
+  .footer-form textarea {
+    background-color: #3a3a3a;
+    color: white;
+  }
+
+  .footer-copy {
+    color: #ccc;
+  }
+}
+
+/* ----------- RESPONSIVO MOBILE ----------- */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-btn {
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .footer-form input,
+  .footer-form textarea {
+    width: 100%;
+  }
+}
+
+/*===========================
+   BOTÃO DE TEMA
+===========================*/
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0,0,0,0.05); /* fundo bem leve */
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.theme-btn:hover {
+  transform: scale(1.10);
+  background-color: rgba(0,0,0,0.10);
+}
+
+
+.theme-btn .icon-moon {
+  display: none;
+}
+
+/* Modo escuro ativado */
+.dark-mode .icon-sun {
+  display: none;
+}
+
+.dark-mode .icon-moon {
+  display: inline;
+}
+
+/*===========================
+   CORES DO MODO ESCURO
+===========================*/
+
+.dark-mode body,
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #eaeaea;
+}
+
+/* Seções principais */
+.dark-mode .section,
+.dark-mode .experiencia-container,
+.dark-mode .container-hobbies,
+.dark-mode .descricao-hobbies,
+.dark-mode .footer-box {
+  background-color: #2b2b2b;
+  color: #eaeaea;
+}
+
+/* Textos */
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+  color: #ffffff;
+}
+
+/* Cards de listas */
+.dark-mode .lista-hobbies li,
+.dark-mode #movies-list li,
+.dark-mode #series-list li {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+}
+
+/* Inputs */
+.dark-mode .footer-form input,
+.dark-mode .footer-form textarea {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer */
+.dark-mode .footer-copy {
+  color: #ccc;
+}
