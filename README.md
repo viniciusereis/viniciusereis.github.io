@@ -3,7 +3,6 @@
 * Quem sou
 * Minhas Hard Skills
 * Minhas soft skills
-* Series e Filmes Favoritos
 * Meus Projetos
 * Meus hobbies
 
